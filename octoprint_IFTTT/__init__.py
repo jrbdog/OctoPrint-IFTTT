@@ -68,9 +68,10 @@ class IFTTTplugin(
             if value[1] == "f":
                 path = self._storage_interface.path_on_disk(path)
 
-			with open(path, "rb") as file:
-				data=file.read()
-            return lambda: requests.put("https://temp.sh/" + file.name, data=data.text)
+            with open(path, "rb") as file:
+                data=file.read()
+                
+            return lambda: requests.put("https://temp.sh/" + file.name, data=data).text
 
         if value[0] == "$":
             if value[1] == "t":
