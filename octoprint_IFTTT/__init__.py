@@ -70,7 +70,7 @@ class IFTTTplugin(
 
 			with open(path, "rb") as file:
 				data=file.read()
-            return lambda: requests.put("https://temp.sh/octoprint", data=data.text
+            return lambda: requests.put("https://temp.sh/" + file.name, data=data.text)
 
         if value[0] == "$":
             if value[1] == "t":
