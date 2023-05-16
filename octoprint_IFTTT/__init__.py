@@ -68,7 +68,9 @@ class IFTTTplugin(
             if value[1] == "f":
                 path = self._storage_interface.path_on_disk(path)
 
-            return lambda: requests.put("https://temp.sh/octoprint", data={ "file": open(path, "rb") }).text
+			with open(path, "rb") as file:
+				data=file.read()
+            return lambda: requests.put("https://temp.sh/octoprint", data=data.text
 
         if value[0] == "$":
             if value[1] == "t":
@@ -130,11 +132,11 @@ class IFTTTplugin(
                 displayVersion=self._plugin_version,
 
                 type="github_release",
-                user="tjjfvi",
+                user="jrbdog",
                 repo="OctoPrint-IFTTT",
                 current=self._plugin_version,
 
-                pip="https://github.com/tjjfvi/OctoPrint-IFTTT/archive/{target_version}.zip"
+                pip="https://github.com/jrbdog/OctoPrint-IFTTT/archive/{target_version}.zip"
             )
         )
 
