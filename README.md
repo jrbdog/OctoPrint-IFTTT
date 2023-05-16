@@ -6,10 +6,9 @@ Connects OctoPrint events to IFTTT.
 
 ## Setup
 
-Install via the bundled [Plugin Manager](https://github.com/foosel/OctoPrint/wiki/Plugin:-Plugin-Manager)
-or manually using this URL:
+Install manually using this URL:
 
-    https://github.com/tjjfvi/OctoPrint-IFTTT/archive/master.zip
+    https://github.com/jrbdog/OctoPrint-IFTTT/archive/master.zip
 
 Then follow the steps listed [here](https://github.com/tjjfvi/OctoPrint-IFTTT/wiki).
 
