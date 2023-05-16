@@ -14,20 +14,20 @@ plugin_package = "octoprint_IFTTT"
 plugin_name = "OctoPrint-IFTTT"
 
 # The plugin's version. Can be overwritten within OctoPrint's internal data via __plugin_version__ in the plugin module
-plugin_version = "1.4.1"
+plugin_version = "1.4.1.1"
 
 # The plugin's description. Can be overwritten within OctoPrint's internal data via __plugin_description__ in the plugin
 # module
 plugin_description = """Connects OctoPrint events to IFTTT"""
 
 # The plugin's author. Can be overwritten within OctoPrint's internal data via __plugin_author__ in the plugin module
-plugin_author = "T6"
+plugin_author = "T6 & jrbdog"
 
 # The plugin's author's mail address.
 plugin_author_email = "t6@t6.fyi"
 
 # The plugin's homepage URL. Can be overwritten within OctoPrint's internal data via __plugin_url__ in the plugin module
-plugin_url = "https://github.com/tjjfvi/OctoPrint-IFTTT"
+plugin_url = "https://github.com/jrbdog/OctoPrint-IFTTT"
 
 # The plugin's license. Can be overwritten within OctoPrint's internal data via __plugin_license__ in the plugin module
 plugin_license = "AGPLv3"
