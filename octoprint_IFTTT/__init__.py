@@ -68,7 +68,7 @@ class IFTTTplugin(
             if value[1] == "f":
                 path = self._storage_interface.path_on_disk(path)
 
-            return lambda: requests.put("https://temp.sh/octoprint" + , data={ "file": open(path, "rb") })
+            return lambda: requests.put("https://temp.sh/octoprint", data={ "file": open(path, "rb") }).text
 
         if value[0] == "$":
             if value[1] == "t":
