@@ -1,3 +1,5 @@
+The only difference between this and upstream is that this uses temp.sh for file uploads instead of file.io.
+
 # OctoPrint-IFTTT
 
 Connects OctoPrint events to IFTTT.
